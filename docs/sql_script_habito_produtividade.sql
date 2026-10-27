@@ -16,3 +16,13 @@ CREATE TABLE TBL_HABITO
 	CONSTRAINT CK_DIAS_CONSECUTIVOS CHECK(NR_DIAS_CONSECUTIVOS >= 0),
 	CONSTRAINT CK_META_DIAS CHECK(NR_META_DIAS > 0)
 )
+
+
+INSERT INTO TBL_HABITO
+    (TX_DESCRICAO, NR_DIAS_CONSECUTIVOS, NR_META_DIAS, FL_CONQUISTA_ALCANCADA)
+VALUES
+    ('Ler por 30 minutos diariamente', 7, 30, 0),
+    ('Beber 2 litros de água por dia', 15, 30, 0),
+    ('Estudar programação por 1 hora', 30, 30, 1),
+    ('Praticar exercícios físicos', 3, 14, 0),
+    ('Dormir pelo menos 8 horas por noite', 0, 21, 0);
